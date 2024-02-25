@@ -12,9 +12,9 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DvdRental
 {
-    public partial class Form1 : Form
+    public partial class FrmMenu : Form
     {
-        public Form1()
+        public FrmMenu()
         {
             InitializeComponent();
         }
@@ -85,6 +85,11 @@ namespace DvdRental
         private void btnReportes_Click(object sender, EventArgs e)
         {
             abrirFormHija(new FrmReportes());
+        }
+
+        private void btnCrearUsuario_Click(object sender, EventArgs e)
+        {
+            abrirFormHija(new FrmCrearUsuario());
         }
 
         private void pnlFondo_Paint(object sender, PaintEventArgs e)

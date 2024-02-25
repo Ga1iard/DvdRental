@@ -1,6 +1,6 @@
 ﻿namespace DvdRental
 {
-    partial class Form1
+    partial class FrmMenu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -35,6 +35,7 @@
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.panlHeader = new System.Windows.Forms.Panel();
+            this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlFondo
@@ -68,7 +69,7 @@
             this.bntAlquiler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntAlquiler.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntAlquiler.ForeColor = System.Drawing.Color.White;
-            this.bntAlquiler.Location = new System.Drawing.Point(2, 158);
+            this.bntAlquiler.Location = new System.Drawing.Point(2, 225);
             this.bntAlquiler.Name = "bntAlquiler";
             this.bntAlquiler.Size = new System.Drawing.Size(227, 63);
             this.bntAlquiler.TabIndex = 9;
@@ -85,7 +86,7 @@
             this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevolucion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevolucion.ForeColor = System.Drawing.Color.White;
-            this.btnDevolucion.Location = new System.Drawing.Point(2, 242);
+            this.btnDevolucion.Location = new System.Drawing.Point(2, 294);
             this.btnDevolucion.Name = "btnDevolucion";
             this.btnDevolucion.Size = new System.Drawing.Size(227, 63);
             this.btnDevolucion.TabIndex = 10;
@@ -102,7 +103,7 @@
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.White;
-            this.btnReportes.Location = new System.Drawing.Point(2, 330);
+            this.btnReportes.Location = new System.Drawing.Point(2, 363);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(227, 63);
             this.btnReportes.TabIndex = 11;
@@ -138,12 +139,30 @@
             this.panlHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panlHeader_Paint);
             this.panlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
             // 
-            // Form1
+            // btnCrearUsuario
+            // 
+            this.btnCrearUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCrearUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCrearUsuario.FlatAppearance.BorderSize = 0;
+            this.btnCrearUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
+            this.btnCrearUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnCrearUsuario.Location = new System.Drawing.Point(2, 156);
+            this.btnCrearUsuario.Name = "btnCrearUsuario";
+            this.btnCrearUsuario.Size = new System.Drawing.Size(227, 63);
+            this.btnCrearUsuario.TabIndex = 14;
+            this.btnCrearUsuario.Text = "Crear Usuario";
+            this.btnCrearUsuario.UseVisualStyleBackColor = false;
+            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
+            // 
+            // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1150, 526);
+            this.Controls.Add(this.btnCrearUsuario);
             this.Controls.Add(this.panlHeader);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnReportes);
@@ -152,7 +171,7 @@
             this.Controls.Add(this.lblOpciones);
             this.Controls.Add(this.pnlFondo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FrmMenu";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -168,6 +187,7 @@
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Panel panlHeader;
+        private System.Windows.Forms.Button btnCrearUsuario;
     }
 }
 
