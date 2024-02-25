@@ -89,6 +89,7 @@ namespace DvdRental
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
+            /*hola*/
             abrirFormHija(new FrmCrearUsuario());
         }
 
